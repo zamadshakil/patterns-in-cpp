@@ -80,10 +80,16 @@ int main() {
 	int n;
 	cout << "Enter number for pattern lenght: ";
 	cin >> n;
+	int veri = n;	
 	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= (n - 1); j++) {
+		for (int j = 1; j <= (veri / 2) ; j++) {
 			cout << " ";
 		}
-		for(int k =1; k<)
+		for (int k = 1; k <= i; k++) {
+			cout << "*";
+		}
+		veri--;
+		cout << endl;
 	}
+	return 0;
 }
