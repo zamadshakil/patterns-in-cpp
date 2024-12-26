@@ -80,18 +80,23 @@ int main() {
 	int n;
 	cout << "Enter number for pattern lenght: ";
 	cin >> n;
-	int veri = n;	
+	int veri = n, incr=1;	
 	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= (veri / 2) ; j++) {
+		for (int j = 1; j < veri ; j++) {
 			cout << " ";
 		}
 		for (int k = 1; k <= i; k++) {
 			cout << "*";
 		}
+		for(int l=1; l<incr; l++){
+			cout << "*";
+		}
+		incr++;
 		veri--;
 		cout << endl;
 	}
-
+	return 0;
+}
 //hollow diamond shape in cpp
 	/*
 #include <iostream>
